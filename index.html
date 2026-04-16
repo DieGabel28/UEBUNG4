@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moped Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Moped Shop 50cc</h1>
+  <a href="cart.html" class="cart-link">🛒 Warenkorb</a>
+</header>
+
+<div class="filter">
+  <button onclick="filterCategory('all')">Alle</button>
+  <button onclick="filterCategory('Sport')">Sport</button>
+  <button onclick="filterCategory('Track')">Track</button>
+  <button onclick="filterCategory('City')">City</button>
+</div>
+
+<div class="container">
+  <div class="card" data-category="Sport">
+    <img src="OIP.webp">
+    <h2>Speedster 50</h2>
+    <p>Sport</p>
+    <p>€1800</p>
+    <button onclick="addToCart('Speedster 50', 1800)">Kaufen</button>
+  </div>
+
+  <div class="card" data-category="Track">
+    <img src="OIP (1).webp">
+    <h2>Track Pro 50</h2>
+    <p>Track</p>
+    <p>€2100</p>
+    <button onclick="addToCart('Track Pro 50', 2100)">Kaufen</button>
+  </div>
+
+  <div class="card" data-category="City">
+    <img src="OIP (2).webp">
+    <h2>Urban Rider 50</h2>
+    <p>City</p>
+    <p>€1500</p>
+    <button onclick="addToCart('Urban Rider 50', 1500)">Kaufen</button>
+  </div>
+</div>
+
+<div id="notification" class="notification">Hinzugefügt!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
